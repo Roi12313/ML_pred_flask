@@ -1,0 +1,251 @@
+<html>
+<body>
+<style>
+
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+.btn { display: inline-block; *display: inline; *zoom: 1; padding: 4px 10px 4px; margin-bottom: 0; font-size: 13px; line-height: 18px; color: #333333; text-align: center;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; background-color: #f5f5f5; background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6); background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6); background-image: -o-linear-gradient(top, #ffffff, #e6e6e6); background-image: linear-gradient(top, #ffffff, #e6e6e6); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#ffffff, endColorstr=#e6e6e6, GradientType=0); border-color: #e6e6e6 #e6e6e6 #e6e6e6; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border: 1px solid #e6e6e6; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); cursor: pointer; *margin-left: .3em; }
+.btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] { background-color: #e6e6e6; }
+.btn-large { padding: 9px 14px; font-size: 15px; line-height: normal; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.btn:hover { color: #333333; text-decoration: none; background-color: #e6e6e6; background-position: 0 -15px; -webkit-transition: background-position 0.1s linear; -moz-transition: background-position 0.1s linear; -ms-transition: background-position 0.1s linear; -o-transition: background-position 0.1s linear; transition: background-position 0.1s linear; }
+.btn-primary, .btn-primary:hover { text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); color: #ffffff; }
+.btn-primary.active { color: rgba(255, 255, 255, 0.75); }
+.btn-primary { background-color: #4a77d4; background-image: -moz-linear-gradient(top, #6eb6de, #4a77d4); background-image: -ms-linear-gradient(top, #6eb6de, #4a77d4); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#6eb6de), to(#4a77d4)); background-image: -webkit-linear-gradient(top, #6eb6de, #4a77d4); background-image: -o-linear-gradient(top, #6eb6de, #4a77d4); background-image: linear-gradient(top, #6eb6de, #4a77d4); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#6eb6de, endColorstr=#4a77d4, GradientType=0);  border: 1px solid #3762bc; text-shadow: 1px 1px 1px rgba(0,0,0,0.4); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5); }
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { filter: none; background-color: #4a77d4; }
+.btn-block { width: 100%; display:block; }
+
+* { -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; -o-box-sizing:border-box; box-sizing:border-box; }
+
+html { width: 100%; height:100%; overflow:hidden; }
+
+legend {text-align:center}
+
+h3{
+	height:30px;
+	line-height:30px;
+	
+	color: white; 
+	margin: auto;  
+	}
+
+label {
+    
+    color: white;
+    
+}
+div {
+    width: 1000px;
+    height: 200px;
+    
+    
+    
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+}
+
+body { 
+	width: 100%;
+	height:100%;
+	font-family: 'Open Sans', sans-serif;
+	background: #092756;
+	background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
+	background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+	background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+	background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+	background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+}
+.login { 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -150px;
+	width:300px;
+	height:300px;
+}
+.login h1 { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
+
+input { 
+	width: 100%; 
+	margin-bottom: 10px; 
+	background: rgba(0,0,0,0.3);
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+}
+input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
+</style>
+<body>
+    <h3>Income Prediction Form</h3>
+
+<div>
+  <form action="/result" method="POST">
+    <label for="age">Age</label>
+    <input type="text" id="age" name="age" required>
+    <br>
+    <label for="w_class">Working Class</label>
+    <select id="w_class" name="w_class" required>
+      <option value="0">Federal-gov</option>
+      <option value="1">Local-gov</option>
+      <option value="2">Never-worked</option>
+      <option value="3">Private</option>
+      <option value="4">Self-emp-inc</option>
+      <option value="5">Self-emp-not-inc</option>
+      <option value="6">State-gov</option>
+      <option value="7">Without-pay</option>
+    </select>
+    <br>
+    <label for="edu">Education</label>
+    <select id="edu" name="edu" required>
+      <option value="0">10th</option>
+      <option value="1">11th</option>
+      <option value="2">12th</option>
+      <option value="3">1st-4th</option>
+      <option value="4">5th-6th</option>
+      <option value="5">7th-8th</option>
+      <option value="6">9th</option>
+      <option value="7">Assoc-acdm</option>
+      <option value="8">Assoc-voc</option>
+      <option value="9">Bachelors</option>
+      <option value="10">Doctorate</option>
+      <option value="11">HS-grad</option>
+      <option value="12">Masters</option>
+      <option value="13">Preschool</option>
+      <option value="14">Prof-school</option>
+      <option value="15">16 - Some-college</option>
+    </select>
+    <br>
+    <label for="martial_stat">Marital Status</label>
+    <select id="martial_stat" name="martial_stat" required>
+      <option value="0">divorced</option>
+      <option value="1">married</option>
+      <option value="2">not married</option>
+    </select>
+    <br>
+    <label for="occup">Occupation</label>
+    <select id="occup" name="occup" required>
+      <option value="0">Adm-clerical</option>
+      <option value="1">Armed-Forces</option>
+      <option value="2">Craft-repair</option>
+      <option value="3">Exec-managerial</option>
+      <option value="4">Farming-fishing</option>
+      <option value="5">Handlers-cleaners</option>
+      <option value="6">Machine-op-inspct</option>
+      <option value="7">Other-service</option>
+      <option value="8">Priv-house-serv</option>
+      <option value="9">Prof-specialty</option>
+      <option value="10">Protective-serv</option>
+      <option value="11">Sales</option>
+      <option value="12">Tech-support</option>
+      <option value="13">Transport-moving</option>
+    </select>
+    <br>
+    <label for="relation">Relationship</label>
+    <select id="relation" name="relation" required>
+      <option value="0">Husband</option>
+      <option value="1">Not-in-family</option>
+      <option value="2">Other-relative</option>
+      <option value="3">Own-child</option>
+      <option value="4">Unmarried</option>
+      <option value="5">Wife</option>
+    </select>
+    <br>
+    <label for="race">Race</label>
+    <select id="race" name="race" required>
+      <option value="0">Amer Indian Eskimo</option>
+      <option value="1">Asian Pac Islander</option>
+      <option value="2">Black</option>
+      <option value="3">Other</option>
+      <option value="4">White</option>
+    </select>
+    <br>
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender" required>
+      <option value="0">Female</option>
+      <option value="1">Male</option>
+    </select>
+    <br>
+    <label for="c_gain">Capital Gain </label>
+    <input type="text" id="c_gain" name="c_gain" placeholder="btw:[0-99999]" required>
+    <br>
+    <label for="c_loss">Capital Loss </label>
+    <input type="text" id="c_loss" name="c_loss" placeholder="btw:[0-4356]" required>
+    <br>
+    <label for="hours_per_week">Hours per Week </label>
+    <input type="text" id="hours_per_week" name="hours_per_week" placeholder="btw:[1-99]" required>
+	
+	<div>
+		<br>
+		<label for="native-country">Native Country</label>
+		<select id="native-country" name="native-country" required>
+		<option value="0">Cambodia</option>
+		<option value="1">Canada</option>
+		<option value="2">China</option>
+		<option value="3">Columbia</option>
+		<option value="4">Cuba</option>
+		<option value="5">Dominican Republic</option>
+		<option value="6">Ecuador</option>
+		<option value="7">El Salvadorr</option>
+		<option value="8">England</option>
+		<option value="9">France</option>
+		<option value="10">Germany</option>
+		<option value="11">Greece</option>
+		<option value="12">Guatemala</option>
+		<option value="13">Haiti</option>
+		<option value="14">Netherlands</option>
+		<option value="15">Honduras</option>
+		<option value="16">HongKong</option>
+		<option value="17">Hungary</option>
+		<option value="18">India</option>
+		<option value="19">Iran</option>
+		<option value="20">Ireland</option>
+		<option value="21">Italy</option>
+		<option value="22">Jamaica</option>
+		<option value="23">Japan</option>
+		<option value="24">Laos</option>
+		<option value="25">Mexico</option>
+		<option value="26">Nicaragua</option>
+		<option value="27">Outlying-US(Guam-USVI-etc)</option>
+		<option value="28">Peru</option>
+		<option value="29">Philippines</option>
+		<option value="30">Poland</option>
+		<option value="11">Portugal</option>
+		<option value="32">Puerto-Rico</option>
+		<option value="33">Scotland</option>
+		<option value="34">South</option>
+		<option value="35">Taiwan</option>
+		<option value="36">Thailand</option>
+		<option value="37">Trinadad&Tobago</option>
+		<option value="38">United States</option>
+		<option value="39">Vietnam</option>
+		<option value="40">Yugoslavia</option>
+		</select>
+    	<br>
+	</div>
+
+	<div>
+		<input type="submit" value="Submit">
+	</div>
+	
+    
+  </form>
+</div>
+</body>
+
+
+</body>
+</html>
