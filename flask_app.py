@@ -4,7 +4,7 @@ import sqlite3
 import pickle
 import numpy as np
 app = Flask(__name__)
-
+app.secret_key = "super secret key"
 # conn=sqlite3.connect("signup.db")
 # c=conn.cursor()
 # # c.execute("create table if not exists user (name text, username text, pass text)")
@@ -16,7 +16,12 @@ app = Flask(__name__)
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template('home.html')
+    return render_template('home_page.html')
+
+@app.route("/login")
+def login():
+    return render_template('login.html')
+
 
 
 @app.route("/home_pred")
@@ -87,6 +92,6 @@ def result():
         return render_template("result.html", prediction = prediction)
 
 if __name__ == "__main__":
-    app.secret_key = 'super secret key'
+    # app.secret_key = 'super secret key'
     app.config['SESSION_TYPE'] = 'filesystem'
     app.run(debug=True)

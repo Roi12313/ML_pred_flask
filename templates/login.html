@@ -1,0 +1,23 @@
+
+
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/login_style.css') }}">
+    
+  </head>
+  <body>
+    <div class="login">
+      <h1>Login</h1>
+        <form method ="POST" action="/loggedin">
+          <input type="text" name="email" placeholder="Username" required="required" />
+            <input type="password" name="pass" placeholder="Password" required="required" />
+            <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+        </form>
+    </div>
+    
+    
+
+  </body>
+</html>

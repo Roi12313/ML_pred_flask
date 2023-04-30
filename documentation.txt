@@ -1,0 +1,24 @@
+1. The code was developed in Visual studio code.
+2. To deploy free we Render deploy service is used  (https://render.com/)
+3. See Render Tutorial ( https://www.youtube.com/watch?v=OBGaCULCZzg)
+
+Notes about render:
+1. If the deployement fails then then it can be seen from the 'logs' option
+2. Evem after deployement, if there is some error in code, that can also be seen from the 'logs' option
+3. Before deploying please set in Render python version (pyhton version in the Enviornments->Enviormenet variabels -> Key (PYTHON_VERSION) ,VALUE ( 3.11.2)
+4. Always set the Start command in Settings in Render dashboard to-- gunicorn your app name:app
+5. We can change GIT repo from settings as well
+
+
+4. How to upload all the files from VS code to a git repo.
+Install GIT 'https://git-scm.com/book/en/v2/Getting-Started-Installing-Git'
+Then,
+First Create a new repo in GIT website 
+ In the Terminal (VS code terminal) Write the following:
+
+git init
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Roi12313/check.git  (name of the repo, here it is named 'check')
+git push -u origin main
+ 
