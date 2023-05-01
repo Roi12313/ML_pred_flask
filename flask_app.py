@@ -14,7 +14,7 @@ app.secret_key = "super secret key"
 
 
 @app.route("/")
-@app.route("/home")
+@app.route("/home",methods=['GET','POST'])
 def home():
     return render_template('home_page.html')
 
@@ -22,7 +22,9 @@ def home():
 def login():
     return render_template('login.html')
 
-
+@app.route("/apps_options")
+def apps_options():
+    return render_template('apps_options.html')
 
 @app.route("/home_pred")
 def home_pred():
@@ -44,7 +46,7 @@ def loggedin():
             print('rntered for..',i[1],i[2],flush=True)
             if (email==i[1] and passw==i[2]):
                 session["logedin"]=True
-                return redirect(url_for("home_pred"))
+                return redirect(url_for("apps_options"))
 
     return render_template('home.html')
 

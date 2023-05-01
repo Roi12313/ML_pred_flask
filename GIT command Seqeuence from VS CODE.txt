@@ -1,0 +1,12 @@
+git status -s          //will show me that foo.java has changed
+
+git add.    //will add it to my local repo (or to add all new files at once do  
+
+git commit -m "my changes"      //commit to the local repo
+
+
+git push -u origin main       //finally, move the local commit to the remote repo with the new tag. this will prompt for your password. if no tag is set as in step 4, then just
+
+if there is an error then force push using the below
+
+git push -f origin main   
