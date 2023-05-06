@@ -1,0 +1,26 @@
+<html>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/credit_card_style.css') }}">
+
+
+<body>
+<div class="wrapper">
+    <div class="container">
+      <h1>Upload a file to get predictions</h1>
+      <div class="upload-container">
+        <div class="border-container">
+          <div class="icons fa-4x">
+            <i class="fas fa-file-image" data-fa-transform="shrink-3 down-2 left-6 rotate--45"></i>
+            <i class="fas fa-file-alt" data-fa-transform="shrink-2 up-4"></i>
+            <i class="fas fa-file-pdf" data-fa-transform="shrink-3 down-2 right-6 rotate-45"></i>
+          </div>
+          <form action = "http://localhost:5000/bank_deposit" method = "POST" 
+         enctype = "multipart/form-data">
+         <input type = "file" name = "file" />
+         <input type = "submit"/>
+      </form>  
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+  </html>
